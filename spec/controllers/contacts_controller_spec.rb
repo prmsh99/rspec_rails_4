@@ -22,7 +22,7 @@ describe ContactsController do
     allow(contact).to receive(:save).and_return(true)
   end
 
-  shared_examples("public access to contacts") do
+  shared_examples("public access to the contacts") do
     describe 'GET #index' do
       before :each do
         get :index
